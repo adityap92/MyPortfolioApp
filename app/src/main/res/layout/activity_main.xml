@@ -1,96 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/back"
     tools:context="com.myportfolioapp.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="My Nanodegree Apps:"
-        android:textSize="25dp"
-        android:layout_margin="20dp"
-        android:textColor="#000000"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:background="@color/back"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.myportfolioapp.MainActivity">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="15"
-        android:text="POPULAR MOVIES"
-        android:textColor="@color/black"
-        android:background="@color/buttonBackground"
-        android:id="@+id/bMovies"
-        android:layout_margin="5dp"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/my_nanodegree_app" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="STOCK HAWK"
-        android:id="@+id/bStockHawk"
-        android:ems="15"
-        android:layout_margin="5dp"
-        android:textColor="@color/black"
-        android:background="@color/buttonBackground"
-        android:layout_below="@+id/bMovies"
-        android:layout_centerHorizontal="true" />
+        <Button
+            android:id="@+id/bMovies"
+            style="@style/ButtonTheme"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:text="@string/popular_movies" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="BUILD IT BIGGER"
-        android:ems="15"
-        android:id="@+id/bBigger"
-        android:layout_margin="5dp"
-        android:textColor="@color/black"
-        android:background="@color/buttonBackground"
-        android:layout_below="@+id/bStockHawk"
-        android:layout_centerHorizontal="true" />
+        <Button
+            android:id="@+id/bStockHawk"
+            style="@style/ButtonTheme"
+            android:layout_below="@+id/bMovies"
+            android:layout_centerHorizontal="true"
+            android:text="@string/stock_hawk" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MAKE IT MATERIAL"
-        android:id="@+id/bMaterial"
-        android:ems="15"
-        android:layout_margin="5dp"
-        android:textColor="@color/black"
-        android:background="@color/buttonBackground"
-        android:layout_below="@+id/bBigger"
-        android:layout_centerHorizontal="true" />
+        <Button
+            android:id="@+id/bBigger"
+            style="@style/ButtonTheme"
+            android:layout_below="@+id/bStockHawk"
+            android:layout_centerHorizontal="true"
+            android:text="@string/build_it_bigger" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="GO UBIQUITOUS"
-        android:id="@+id/bUbiquitous"
-        android:textColor="@color/black"
-        android:background="@color/buttonBackground"
-        android:ems="15"
-        android:layout_margin="5dp"
-        android:layout_below="@+id/bMaterial"
-        android:layout_centerHorizontal="true" />
+        <Button
+            android:id="@+id/bMaterial"
+            style="@style/ButtonTheme"
+            android:layout_below="@+id/bBigger"
+            android:layout_centerHorizontal="true"
+            android:text="@string/make_it_material" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CAPSTONE"
-        android:id="@+id/bCapstone"
-        android:ems="15"
-        android:textColor="@color/black"
-        android:background="@color/buttonBackground"
-        android:layout_marginTop="5dp"
-        android:layout_below="@+id/bUbiquitous"
-        android:layout_alignStart="@+id/bUbiquitous" />
+        <Button
+            android:id="@+id/bUbiquitous"
+            style="@style/ButtonTheme"
+            android:layout_below="@+id/bMaterial"
+            android:layout_centerHorizontal="true"
+            android:text="@string/go_ubiquitous" />
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/bCapstone"
+            style="@style/ButtonTheme"
+            android:layout_alignStart="@+id/bUbiquitous"
+            android:layout_below="@+id/bUbiquitous"
+            android:text="@string/capstone" />
+
+    </RelativeLayout>
+
+</ScrollView>

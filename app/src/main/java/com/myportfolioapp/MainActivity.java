@@ -1,8 +1,6 @@
 package com.myportfolioapp;
 
 import android.app.Activity;
-import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,8 +17,7 @@ public class MainActivity extends Activity {
         popMovies.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast toast = Toast.makeText(getApplicationContext(),"This button will launch my Popular Movies App!", Toast.LENGTH_SHORT);
-                toast.show();
+                showToast("This button will launch my Popular Movies App!");
             }
         });
 
@@ -28,8 +25,7 @@ public class MainActivity extends Activity {
         stockHawk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast toast = Toast.makeText(getApplicationContext(),"This button will launch my Stock Hawk App!", Toast.LENGTH_SHORT);
-                toast.show();
+                showToast("This button will launch my Stock Hawk App!");
             }
         });
 
@@ -37,8 +33,7 @@ public class MainActivity extends Activity {
         buildBigger.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast toast = Toast.makeText(getApplicationContext(),"This button will launch my Build it Bigger App!", Toast.LENGTH_SHORT);
-                toast.show();
+                showToast("This button will launch my Build it Bigger App!");
             }
         });
 
@@ -46,8 +41,7 @@ public class MainActivity extends Activity {
         makeMaterial.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast toast = Toast.makeText(getApplicationContext(),"This button will launch my Make it Material App!", Toast.LENGTH_SHORT);
-                toast.show();
+                showToast("This button will launch my Make it Material App!");
             }
         });
 
@@ -55,8 +49,7 @@ public class MainActivity extends Activity {
         ubiquitous.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast toast = Toast.makeText(getApplicationContext(),"This button will launch my Go Ubiquitous App!", Toast.LENGTH_SHORT);
-                toast.show();
+                showToast("This button will launch my Go Ubiquitous App!");
             }
         });
 
@@ -64,11 +57,13 @@ public class MainActivity extends Activity {
         capstone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast toast = Toast.makeText(getApplicationContext(),"This button will launch my Capstone App!", Toast.LENGTH_SHORT);
-                toast.show();
+                showToast("This button will launch my Capstone App!");
             }
         });
+    }
 
-
+    private void showToast(String text) {
+        Toast toast = Toast.makeText(getApplicationContext(), text, Toast.LENGTH_SHORT);
+        toast.show();
     }
 }
