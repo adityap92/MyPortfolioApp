@@ -2,7 +2,7 @@
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.myportfolioapp.MainActivity">
 
@@ -18,11 +18,14 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:text="@string/my_nanodegree_app" />
+            android:text="@string/my_nanodegree_app"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
 
         <Button
             android:id="@+id/bMovies"
@@ -62,9 +65,9 @@
         <Button
             android:id="@+id/bCapstone"
             style="@style/ButtonTheme"
-            android:layout_alignStart="@+id/bUbiquitous"
+            android:text="@string/capstone"
             android:layout_below="@+id/bUbiquitous"
-            android:text="@string/capstone" />
+            android:layout_centerHorizontal="true"/>
 
     </RelativeLayout>
 
